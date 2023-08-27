@@ -1,0 +1,29 @@
+LBP (Local Binary Pattern) is a simple yet effective feature extraction technique widely 
+used in computer vision applications for texture analysis, object recognition, and face 
+recognition. The LBP operator computes a binary code for each pixel in an image by 
+comparing the gray-level intensity of its neighboring pixels.
+
+Here are the steps involved in the LBP feature extraction process:
+
+Image preprocessing: The input image is preprocessed by converting it to grayscale and 
+applying any necessary filtering or normalization techniques.
+
+LBP computation: For each pixel in the grayscale image, an 8-bit binary code is generated 
+by comparing the pixel's intensity value with its 8 neighboring pixels. The LBP operator 
+assigns a value of 1 to the binary code if the neighboring pixel's intensity value is 
+greater than or equal to the central pixel's intensity value, and a value of 0 if it is 
+less than the central pixel's intensity value.
+
+LBP histogram: Once the LBP codes are generated for all pixels in the image, a histogram 
+of the LBP codes is constructed to summarize the texture information in the image. 
+The histogram bins correspond to the possible LBP codes, and the bin values indicate 
+the frequency of occurrence of each LBP code in the image.
+
+Feature vector: The LBP histogram is typically used as a feature vector for subsequent 
+classification or analysis tasks. The feature vector can be further processed by applying 
+normalization or dimensionality reduction techniques, such as PCA or LDA, to improve the 
+performance of the system.
+
+Overall, LBP feature extraction is a simple yet powerful technique for texture analysis 
+and pattern recognition tasks. Its computational efficiency and robustness to noise and 
+illumination changes make it a popular choice in many computer vision applications.
